@@ -1,3 +1,8 @@
 .body-config{
     background-color: aliceblue;
 }
+
+.error-text{
+    display: none;
+    color: red;
+}
