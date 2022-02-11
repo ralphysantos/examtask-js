@@ -89,10 +89,15 @@ $(function () {
                         bod += "<td>" + e[key] + "</td>";
                     }
                 });
+                bod+='<td><button class="testbutton" id="testbutton" data-index='+index+'>x</button></td>';
                 body += pre + bod + suf;
             });
             return body;
+        },
+        removeItem(index){
+            list.splice(index, 1);
         }
+
     }
 
     submitgrade.onclick = function () {
@@ -135,5 +140,13 @@ $(function () {
         GradeBook.clearList();
         $("#results").html(GradeBook.generateTable());
     }
+
+    $(document).on('click','#testbutton',function(e){
+        e.preventDefault();
+        let index =$(this).data('index');
+
+        GradeBook.removeItem(index);
+        $("#results").html(GradeBook.generateTable());
+    });
 });
 
