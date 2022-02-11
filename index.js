@@ -89,7 +89,7 @@ $(function () {
                         bod += "<td>" + e[key] + "</td>";
                     }
                 });
-                bod+='<td><button class="testbutton" id="testbutton" data-index='+index+'>x</button></td>';
+                bod+='<td><button class="btn btn-primary btn-sm testbutton" id="testbutton" data-index='+index+'>X</button></td>';
                 body += pre + bod + suf;
             });
             return body;
@@ -141,7 +141,7 @@ $(function () {
         $("#results").html(GradeBook.generateTable());
     }
 
-    $(document).on('click','#testbutton',function(e){
+    $(document).on('click','.testbutton',function(e){
         e.preventDefault();
         let index =$(this).data('index');
 
