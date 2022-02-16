@@ -134,10 +134,11 @@ $(function () {
         });
 
         ave = (total > 0) ? total / count : 0;
-        $("#average").html(ave);
+        $("#average").html(ave.toFixed(2));
     }
     clearTable.onclick = function () {
         GradeBook.clearList();
+        $("#average").html(0);
         $("#results").html(GradeBook.generateTable());
     }
 
