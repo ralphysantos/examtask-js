@@ -20,7 +20,7 @@ Sample Submission and Calculation
 ![image info](screenshot/2.JPG)
 
 Extra Additions:
-Remove Button ( X button on every row)
+Remove Button ( X button on every row).
 - Remove Button will delete the specific data that needs to be remove.
 
 - Validations upon submission of Grade with error message included
