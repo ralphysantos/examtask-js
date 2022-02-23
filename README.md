@@ -19,7 +19,7 @@ Sample Submission and Calculation
 
 ![image info](screenshot/2.JPG)
 
-* Extra
+Extra Additions:
 Remove Button ( X button on every row)
 - Remove Button will delete the specific data that needs to be remove.
 
